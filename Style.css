@@ -1,0 +1,85 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 98vh;
+    width: 98vw;
+    background-color: #333333;
+    position: relative;
+    justify-content: center;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 18%;
+    border: 1px white solid;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    width: 50%;
+    height: 20%;
+    position: absolute;
+    top: 5px;
+    left: 25%;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 40px;
+    position: absolute;
+    top: 30px;
+}
+
+#wrapper {
+    width: 55%;
+    height: 80%;
+    margin: 0.5% auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+    position: absolute;
+    left: 25%;
+    bottom: 2px;
+    
+}
+
+.card {
+    width: 19%;
+    height: 20%;
+    margin: 1%;
+    position: relative;
+    cursor: pointer;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s; 
+}
+
+
+.front-img, .back-img {
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    margin-left: 10%;
+    backface-visibility: hidden;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.front-img {
+    transform: rotateY(180deg);
+}
