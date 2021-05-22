@@ -3,20 +3,27 @@
 }
 
 body {
-    background-color: #232323;
+    background-color: #afafaf;
     padding: 5px;
 }
+
 
 #wrapper {
     margin: 0 auto;
     height: 95vh;
-    width: 95vw;
+    width: 70vw;
+    background-color: #7b7b7b;
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-bottom: 1%;
+    border-radius: 10px;
+    border: 2px solid black;
 }
-
+/*-----page------*/
 header {
     margin: 0 auto;
     height: 23%;
-    width: 60%;
+    width: 100%;
     text-align: center;
     align-items: center;
 }
@@ -28,22 +35,23 @@ header *{
 header h1{
     color: white;
     font-size: 3vw;
-    text-shadow: -2px 2px 1px #757575;
+    text-shadow: -2px 2px 1px black;
 }
 
 
 header button {
-    font-size: 1vw;
-    width: 20%;
+    font-size: 1.2vw;
+    border-radius: 20px;
+    width: 15%;
     height: 5vh;
     background-color: black;
 }
 
 #timer {
     width: 50%;
-    height: 6vh;
+    height: 50px;
     margin: 0 auto;
-    font-size: 3vw;
+    font-size: 150%;
     color: red;
     font-weight: bold;
     letter-spacing: 0.2vw;
@@ -51,6 +59,7 @@ header button {
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
+    text-shadow: -1px 1px 0px black;
 }
 
 section {
@@ -64,7 +73,7 @@ section {
 
 /*-----------midlle section-----------*/
 
-#midlle {
+#middle {
     width: 50%;
     height: 100%;
     float: left;
@@ -97,6 +106,8 @@ section {
 
 .game-card.flip {
     transform: rotateY(180deg);
+    background-color: white;
+    border-radius: 10px;
 }
 
 .front-img {
@@ -106,8 +117,8 @@ section {
 
 /*-----------left section-----------*/
 
-
 #left-side {
+    position: relative;
     border: 2px solid #0026ff;
     text-shadow: -1px 1px 1px #0026ff;
     width: 20%;
@@ -115,33 +126,43 @@ section {
     float: left;
 }
 
+.turns-note {
+
+}
+
+#right-turn, #left-turn {
+    height: 5vh;
+    width: 100%;
+    position: absolute;
+    top: -15%;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-size: 150%;
+}
 
 /*-----------right section-----------*/
-
 #right-side {
+    position: relative;
     border: 2px solid #ffd800;
     width: 20%;
     height: 100%;
     float: right;
     text-shadow: -.5px .5px 1px #fffd8c;
+    opacity: 0.6;
 }
 
 #score-bord {
     text-align: center;
     margin-top: 10%;
     font-size: 2vw;
-    color: whitesmoke;
+    color: #676a1d;
 }
 #score-bord p{
-    font-size: 1.5vw;
+    font-size: 2vw;
     margin-top: 10vh;
 }
 
-#img-result img{
-    margin-top: 20vh;
-    height: 10vh;
-    width: 6vw;
-}
 
 #clear {
     clear: both;
