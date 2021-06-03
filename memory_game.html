@@ -8,14 +8,14 @@
 <body>
     <div id="wrapper">
         <header>
-            <div id="title"><h1>Lets Play The Card Memory Game!</h1></div>
-            <div id="btnShuffle"><button onclick="window.location.reload()">Click To Start</button></div>
+            <div id="title"><h1>Lets Play The Cards Memory Game!</h1></div>
+            <div id="btnShuffle"><button onclick="window.location.reload()">Click To Shuffle</button></div>
             <div id="timer"></div>
         </header>
 
         <section>
             <!-- player 1 -->
-            <div id="left-side">
+            <div id="left-side" class="leftSide">
             <div class="turns-note" id="left-turn"></div>
                 <div id="score-bord">
                     <div id="player-name">Player 2</div>
@@ -26,74 +26,75 @@
 
             <!-- cards container -->
             <div id="middle">
-                <div class="game-card" id="c1" onclick="getCardName('c')">
+                <div id="winner"></div>
+                <div class="game-card" onclick="GetCardName('c')">
                     <div class="fornt-div"><img src="../images/c-image.png" class="front-img" /></div>
                     <div class="back-div"><img src="../images/back.png" class="back-img" /></div>
                 </div>
-                <div class="game-card" id="c2" onclick="getCardName('c')">
+                <div class="game-card" onclick="GetCardName('c')">
                     <div class="fornt-div"><img src="../images/c-image.png" class="front-img" /></div>
                     <div class="back-div"><img src="../images/back.png" class="back-img" /></div>
                 </div>
-                <div class="game-card" id="csharp1" onclick="getCardName('csharp')">
+                <div class="game-card" onclick="GetCardName('csharp')">
                     <div class="fornt-div"><img src="../images/csharp.png" class="front-img" /></div>
                     <div class="back-div"><img src="../images/back.png" class="back-img" /></div>
                 </div>
-                <div class="game-card" id="csharp2" onclick="getCardName('csharp')">
+                <div class="game-card" onclick="GetCardName('csharp')">
                     <div class="fornt-div"><img src="../images/csharp.png" class="front-img" /></div>
                     <div class="back-div"><img src="../images/back.png" class="back-img" /></div>
                 </div>
-                <div class="game-card" id="HTML1" onclick="getCardName('HTML')">
+                <div class="game-card" onclick="GetCardName('HTML')">
                     <div class="fornt-div"><img src="../images/HTML.png" class="front-img" /></div>
                     <div class="back-div"><img src="../images/back.png" class="back-img" /></div>
                 </div>
-                <div class="game-card" id="HTML2" onclick="getCardName('HTML')">
+                <div class="game-card" onclick="GetCardName('HTML')">
                     <div class="fornt-div"><img src="../images/HTML.png" class="front-img" /></div>
                     <div class="back-div"><img src="../images/back.png" class="back-img" /></div>
                 </div>
-                <div class="game-card" id="CSS" onclick="getCardName('CSS')">
+                <div class="game-card" onclick="GetCardName('CSS')">
                     <div class="fornt-div"><img src="../images/CSS.png" class="front-img" /></div>
                     <div class="back-div"><img src="../images/back.png" class="back-img" /></div>
                 </div>
-                <div class="game-card" id="CSS2" onclick="getCardName('CSS')">
+                <div class="game-card" onclick="GetCardName('CSS')">
                     <div class="fornt-div"><img src="../images/CSS.png" class="front-img" /></div>
                     <div class="back-div"><img src="../images/back.png" class="back-img" /></div>
                 </div>
-                <div class="game-card" id="PHP1" onclick="getCardName('PHP')">
+                <div class="game-card" onclick="GetCardName('PHP')">
                     <div class="fornt-div"><img src="../images/PHP.png" class="front-img" /></div>
                     <div class="back-div"><img src="../images/back.png" class="back-img" /></div>
                 </div>
-                <div class="game-card" id="PHP2" onclick="getCardName('PHP')">
+                <div class="game-card" onclick="GetCardName('PHP')">
                     <div class="fornt-div"><img src="../images/PHP.png" class="front-img" /></div>
                     <div class="back-div"><img src="../images/back.png" class="back-img" /></div>
                 </div>
-                <div class="game-card" id="python1" onclick="getCardName('python')">
+                <div class="game-card" onclick="GetCardName('python')">
                     <div class="fornt-div"><img src="../images/python.png" class="front-img" /></div>
                     <div class="back-div"><img src="../images/back.png" class="back-img" /></div>
                 </div>
-                <div class="game-card" id="python2" onclick="getCardName('python')">
+                <div class="game-card" onclick="GetCardName('python')">
                     <div class="fornt-div"><img src="../images/python.png" class="front-img" /></div>
                     <div class="back-div"><img src="../images/back.png" class="back-img" /></div>
                 </div>
-                <div class="game-card" id="js1" onclick="getCardName('JS')">
+                <div class="game-card" onclick="GetCardName('JS')">
                     <div class="fornt-div"><img src="../images/JS.png" class="front-img" /></div>
                     <div class="back-div"><img src="../images/back.png" class="back-img" /></div>
                 </div>
-                <div class="game-card" id="js2" onclick="getCardName('JS')">
+                <div class="game-card" onclick="GetCardName('JS')">
                     <div class="fornt-div"><img src="../images/JS.png" class="front-img" /></div>
                     <div class="back-div"><img src="../images/back.png" class="back-img" /></div>
                 </div>
-                <div class="game-card" id="sql1" onclick="getCardName('sql')">
+                <div class="game-card" onclick="GetCardName('sql')">
                     <div class="fornt-div"><img src="../images/sql.png" class="front-img" /></div>
                     <div class="back-div"><img src="../images/back.png" class="back-img" /></div>
                 </div>
-                <div class="game-card" id="sql2" onclick="getCardName('sql')">
+                <div class="game-card" onclick="GetCardName('sql')">
                     <div class="fornt-div"><img src="../images/sql.png" class="front-img" /></div>
                     <div class="back-div"><img src="../images/back.png" class="back-img" /></div>
                 </div>
             </div>
 
             <!-- player 2 -->
-            <div id="right-side">
+            <div id="right-side" class="rightSide turn">
             <div class="turns-note" id="right-turn"></div>
                 <div id="score-bord">
                     <div id="player-name">Player 1</div>

@@ -3,21 +3,22 @@
 }
 
 body {
-    background-color: #afafaf;
+    background-color: lightblue;
     padding: 5px;
 }
 
 
 #wrapper {
     margin: 0 auto;
-    height: 95vh;
-    width: 70vw;
-    background-color: #7b7b7b;
+    height: 96vh;
+    width: 60vw;
+    background-color: lightslategrey;
     padding-right: 2%;
     padding-left: 2%;
     padding-bottom: 1%;
     border-radius: 10px;
-    border: 2px solid black;
+    border: 2px solid lightcyan;
+    box-shadow: 0px 1px 20px 19px lightcyan, 0px 1px 5px 11px lightcyan inset;
 }
 /*-----page------*/
 header {
@@ -33,6 +34,7 @@ header *{
 }
 
 header h1{
+    margin-top: 8px;
     color: white;
     font-size: 3vw;
     text-shadow: -2px 2px 1px black;
@@ -40,18 +42,19 @@ header h1{
 
 
 header button {
-    font-size: 1.2vw;
-    border-radius: 20px;
-    width: 15%;
+    font-size: 2vh;
+    border-radius: 5px;
+    width: 18%;
     height: 5vh;
-    background-color: black;
+    background-color: #0079f7;
+    cursor: pointer;
 }
 
 #timer {
     width: 50%;
     height: 50px;
     margin: 0 auto;
-    font-size: 150%;
+    font-size: 3vh;
     color: red;
     font-weight: bold;
     letter-spacing: 0.2vw;
@@ -75,7 +78,7 @@ section {
 
 #middle {
     width: 50%;
-    height: 100%;
+    height: 96%;
     float: left;
     margin-left: 5%;
     display: flex;
@@ -113,22 +116,35 @@ section {
 .front-img {
     transform: rotateY(180deg);
 }
-
+#winner {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+#winner-div {
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 180%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 5px;
+}
 
 /*-----------left section-----------*/
-
 #left-side {
     position: relative;
     border: 2px solid #0026ff;
     text-shadow: -1px 1px 1px #0026ff;
     width: 20%;
-    height: 100%;
+    height: 96%;
     float: left;
 }
 
-.turns-note {
 
-}
 
 #right-turn, #left-turn {
     height: 5vh;
@@ -138,7 +154,7 @@ section {
     color: black;
     font-weight: bold;
     text-align: center;
-    font-size: 150%;
+    font-size: 4.5vh;
 }
 
 /*-----------right section-----------*/
@@ -146,11 +162,24 @@ section {
     position: relative;
     border: 2px solid #ffd800;
     width: 20%;
-    height: 100%;
+    height: 96%;
     float: right;
     text-shadow: -.5px .5px 1px #fffd8c;
     opacity: 0.6;
 }
+
+.rightSide.turn {
+    background-color: lightsteelblue;
+    box-shadow: 0 0 10px 3px #ffd800;
+    opacity: 0.8;
+}
+
+.leftSide.turn {
+    background-color: lightsteelblue;
+    box-shadow: 0 0 10px 3px blue;
+    opacity: 0.8;
+}
+
 
 #score-bord {
     text-align: center;
